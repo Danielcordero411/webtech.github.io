@@ -1,0 +1,390 @@
+/*uso de variables dentro de css se usa llamando a la variable con el nompre que se asigno*/
+/*estamos definiendo los colores con los que vamos a trabajar*/
+:root{
+    --rojo: #e6d9da;
+    --fondo: #141414;
+    --pie: #
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+
+
+}
+ 
+header {
+    padding: 30px 0;
+
+ 
+}
+/* cambiar atributos concatenando el header y el div*/
+header .container{ 
+    display: flex;
+    justify-content: space-between;/*separa el contenido */
+    align-items: center;/*Alinea los items(logo y menu vertical)*/ 
+}
+/*modificando el logotipo*/
+header .logotipo{
+    font-family:'Bebas Neue', cursive; /*cambiar fuente de logo*/
+    color: var(--rojo);
+    font-weight: normal; /*como es h2 se usa esto para quitar negrita*/
+    font-size: 40px;
+}
+header nav{
+    margin-left: 10%;
+}
+header nav a{
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+/*usado para resaltar el texto al pasar el cursor*/
+header nav a:hover,
+header nav a :active{
+    color: white;
+
+}
+
+/*-----------------comienza el main de la pagina primera seccion  ------*/
+.imagenprincipal{
+
+font-size: 16px;
+min-height: 40.62em;
+background: linear-gradient(rgba(0,0,0,.50)0%,rgba(0,0,0,.50)100%), url(../img/principal.jpg);
+/*buscar la imagen de fondo*/
+background-position: center center;
+background-size: cover;
+margin-bottom: 3.12em;
+display: flex; /*bajar texto*/
+align: end; /*mardar al final de la imagen*/
+}
+
+.imagenprincipal.container{/*eliminar el margen superior */
+    margin: 0 auto;
+    margin-bottom:6em; 
+
+}
+
+.imagenprincipal .titulo{
+    font-weight: 600;
+    font-size: 3.12em ;
+    margin-bottom: 30px;
+color: aliceblue;
+
+}
+.imagenprincipal .descripcion{
+    font-weight: normal;
+    font-size: 1em ;
+    line-height: 1.75em;
+    max-width:50% ;
+    margin-bottom:1.25em ;
+    color: #fff
+}
+
+.imagenprincipal .boton{
+    background: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .03s ease all;
+    font-size: 1.12em;
+
+
+}
+/*-----------------comienza la segunda seccion  ------*/
+
+.imagen2{
+
+    font-size: 16px;
+    min-height: 40.62em;
+    background: linear-gradient(rgba(0,0,0,.50)0%,rgba(0,0,0,.50)100%), url(../img/openai.jpeg);
+    /*buscar la imagen de fondo*/
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex; /*bajar texto*/
+    align: end; /*mardar al final de la imagen*/
+    }
+    
+    .imagen2.container{/*eliminar el margen superior */
+        margin: 0 auto;
+        margin-bottom:6em; 
+    
+    }
+    
+    .imagen2 .titulo{
+        font-weight: 600;
+        font-size: 3.12em ;
+        margin-bottom: 30px;
+    color: aliceblue;
+    
+    }
+    .imagen2 .descripcion{
+        font-weight: normal;
+        font-size: 1em ;
+        line-height: 1.75em;
+        max-width:50% ;
+        margin-bottom:1.25em ;
+        color: #fff
+    }
+    
+    .imagen2 .boton{
+        background: rgba(0,0,0,.50);
+        border: none;
+        border-radius: 0.31em;
+        padding: 0.93em 1.87em;
+        color: #fff;
+        margin-right: 1.25em;
+        cursor: pointer;
+        transition: .03s ease all;
+        font-size: 1.12em;
+    
+    
+    }
+
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+.contenedor-botones .boton:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.contenedor-botones .boton i{
+    margin-right: 1.25em;
+}
+
+.contenedor-botones .boton{
+    background: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .03s ease all;
+    font-size: 1.12em;
+
+
+}
+.contenedor-botones .boton:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+.contenedor {
+	width: 90%;
+	
+	margin: auto;
+}
+
+/*usando Grid para las secciones */
+main .contenedor {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    /*
+	padding: 40px 0;
+	display:grid;
+	grid-gap: 20px;
+	grid-template-columns: 2fr 1fr 1fr;*/
+}
+
+
+main .card {
+    padding: 20px;
+    background: #dbccd8;
+    color: #232533;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+
+    /*
+	
+	
+	
+	border-radius: 5px;
+	box-shadow: 0px 0px 50px rgba(0,0,0,.1);*/
+}
+
+main .card img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+main .card .texto {
+	margin-bottom: 20px;
+	line-height: 27px;
+}
+
+
+/*------------------media queries----------------------------*/
+
+@media screen and (max-width: 600px){
+    header .logotipo{
+        margin-bottom: 10px;
+    }
+
+    header .container {
+        flex-direction: column; /*mueve el menu hacia abajo del logo en el header*/
+    }
+    
+    .imagenprincipal{
+        font-size: 12px;/*cambia el tamaño de los textos cuando la pagina se reduce*/
+    }
+    .imagenprincipal .descripcion{
+        max-width: 100%; /*cambia el parrafo de la primer apublicaicon */
+
+    }
+    .imagen2{
+        font-size: 12px;
+    }
+    .imagen2 .descripcion{
+        max-width: 100%; 
+    }
+
+}
+
+/*--------------------footer------------------------*/
+
+.pie-pagina{
+    width: 100%;
+    background: var(--fondo);
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+
+    color: #e6d9da;
+    margin-bottom: 25px;
+    font-size: 20px;
+
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff; /*cambiar color despues*/
+    margin-right: 10px ;
+    background-color: #0d2033;
+    text-align: center;
+    font-size: 25px;
+    transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #3643F1;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #333438;/*cambiar color*/
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+
+}
+/*----------responsive footer ----------*/
+@media screen and (max-width:800px){
+
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+
+    }
+}
+/* acerca de */
+.acercade{
+    font-size: 16px;
+    min-height: 40.62em;
+    background: linear-gradient(rgba(0,0,0,.50)0%,rgba(0,0,0,.50)100%), url(../img/4884841.jpg);
+    /*buscar la imagen de fondo*/
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex; /*bajar texto*/
+    align: end; /*mardar al final de la imagen*/
+    }
+    
+    .acercade .container{/*eliminar el margen superior */
+        margin: 0 auto;
+        margin-bottom:6em; 
+    
+    }
+    
+    .acercade .titulo{
+        font-weight: 600;
+        font-size: 3.12em ;
+        margin-bottom: 30px;
+    color: aliceblue;
+    
+    }
+    .acercade .descripcion{
+        
+        margin-left: 10%;
+        font-weight: normal;
+        font-size: 1em ;
+        line-height: 1.75em;
+        max-width:50% ;
+        margin-bottom:1.25em ;
+        color: #fff
+    }

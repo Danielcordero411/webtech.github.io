@@ -1,0 +1,35 @@
+
+.acercade{
+    font-size: 20px;
+    min-height: 40.62em;
+    background: linear-gradient(rgba(0,0,0,.50)0%,rgba(0,0,0,.50)100%), url(../img/4884841.jpg);
+    /*buscar la imagen de fondo*/
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex; /*bajar texto*/
+    align: end; /*mardar al final de la imagen*/
+    }
+    
+    .acercade .container{/*eliminar el margen superior */
+        margin: 0 auto;
+        margin-bottom:6em; 
+    
+    }
+    
+    .acercade .titulo{
+        font-weight: 600;
+        font-size: 3.12em ;
+        margin-bottom: 30px;
+    color: aliceblue;
+    
+    }
+    .acercade .descripcion{
+        margin-left: 10%;
+        font-weight: normal;
+        font-size: 1em ;
+        line-height: 1.75em;
+        max-width:50% ;
+        margin-bottom:1.25em ;
+        color: #fff
+    }
